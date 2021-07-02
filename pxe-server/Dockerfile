@@ -16,7 +16,7 @@ Alias /tftp /src/tftp\n\
 RUN a2enconf tftp
 RUN service apache2 restart
 
-EXPOSE 69/tcp
+EXPOSE 69/udp
 EXPOSE 80/tcp
 
 #ENTRYPOINT ["/bin/bash -c"]
